@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Meet the Eik and Stone team. Building across Prince Edward Island since 2005.",
+  description: "Meet the Eik and Stone team. Building across Prince Edward Island since 2018.",
 };
 
 export default function AboutPage() {
@@ -82,8 +82,8 @@ export default function AboutPage() {
               color: "var(--color-serif-text)", lineHeight: 1.8, marginBottom: 20,
             }}>
               Seven years later, that philosophy still drives every project we take on.
-              We&apos;re still a family business — Rachel joined as Director of Operations in 2021
-              — and we still treat every client&apos;s project like it&apos;s our own home.
+              We&apos;re still a family business and we still treat every client&apos;s
+              project like it&apos;s our own home.
             </p>
             <p style={{
               fontFamily: "var(--font-family-serif)", fontSize: 16,

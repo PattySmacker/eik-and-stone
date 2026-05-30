@@ -52,7 +52,7 @@ const jsonLd = {
   "url": "https://eikandstone.com",
   "telephone": "+13438433307",
   "email": "info@eikandstone.com",
-  "foundingDate": "2005",
+  "foundingDate": "2018",
   "founder": {
     "@type": "Person",
     "name": "Mr. Mattioli",

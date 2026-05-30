@@ -53,7 +53,7 @@ export default function Hero() {
             letterSpacing: "0.18em", textTransform: "uppercase",
             color: "var(--color-signal)", marginBottom: 18, display: "block",
           }}>
-            Charlottetown, PEI · Est. 2005
+            Charlottetown, PEI · Est. 2018
           </span>
 
           <h1 style={{
@@ -75,7 +75,7 @@ export default function Hero() {
             lineHeight: 1.75, maxWidth: 480, marginBottom: 40,
           }}>
             Eik and Stone has been delivering custom homes, commercial fit-outs,
-            and major renovations across Canada for over ten years.
+            and major renovations across Canada for over seven years.
             Licensed. Insured. Accountable.
           </p>
 
@@ -116,7 +116,7 @@ export default function Hero() {
           display: "flex", flexDirection: "column", gap: 28,
         }} className="hero-stats">
           {[
-            { val: "10+", label: "Years building across Canada" },
+            { val: "7+", label: "Years building across PEI" },
             { val: "100+", label: "Projects completed on time & on budget" },
             { val: "$0", label: "Outstanding warranty claims" },
             { val: "98%", label: "Client referral rate" },
