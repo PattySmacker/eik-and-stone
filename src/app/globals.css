@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=Barlow+Condensed:wght@300;400;500;600;700;800&family=Barlow:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,500;1,400&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0f1f3d;
+  --color-steel: #1a3560;
+  --color-concrete: #2563a8;
+  --color-iron: #4a90d9;
+  --color-mist: #c8d9ed;
+  --color-fog: #dce8f5;
+  --color-chalk: #f2f5f9;
+  --color-warm: #f8fafc;
+  --color-signal: #2563a8;
+  --color-signal-hover: #1a3560;
+  --color-craft: #4a90d9;
+  --color-craft-hover: #2563a8;
+  --color-craft-light: #e6f1fb;
+  --color-warm-border: #dce8f5;
+  --color-serif-text: #0f1f3d;
+
+  --font-family-display: 'Barlow Condensed', sans-serif;
+  --font-family-body: 'Barlow', sans-serif;
+  --font-family-serif: 'Noto Serif', serif;
+  --font-family-heading: 'Playfair Display SC', serif;
+  --font-family-mono: 'Courier New', monospace;
+
+  --radius-sm: 2px;
+  --radius-md: 15px;
+  --radius-full: 278px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-body);
+  background: var(--color-chalk);
+  color: var(--color-ink);
+  overflow-x: hidden;
+}
