@@ -1,42 +1,92 @@
 import { MetadataRoute } from "next";
-import { services } from "@/data/services";
-import { projects } from "@/data/projects";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://andersbuild.com";
-
-  const staticPages = [
-    { url: baseUrl, priority: 1.0, changeFrequency: "weekly" as const },
-    { url: `${baseUrl}/about`, priority: 0.8, changeFrequency: "monthly" as const },
-    { url: `${baseUrl}/services`, priority: 0.9, changeFrequency: "monthly" as const },
-    { url: `${baseUrl}/portfolio`, priority: 0.8, changeFrequency: "weekly" as const },
-    { url: `${baseUrl}/process`, priority: 0.7, changeFrequency: "monthly" as const },
-    { url: `${baseUrl}/contact`, priority: 0.9, changeFrequency: "monthly" as const },
-    { url: `${baseUrl}/privacy`, priority: 0.3, changeFrequency: "yearly" as const },
-    { url: `${baseUrl}/terms`, priority: 0.3, changeFrequency: "yearly" as const },
-    { url: `${baseUrl}/accessibility`, priority: 0.3, changeFrequency: "yearly" as const },
-  ];
-
-  const servicePages = services.map((s) => ({
-    url: `${baseUrl}/services/${s.slug}`,
-    priority: 0.8,
-    changeFrequency: "monthly" as const,
-  }));
-
-  const projectPages = projects.map((p) => ({
-    url: `${baseUrl}/portfolio/${p.slug}`,
-    priority: 0.7,
-    changeFrequency: "monthly" as const,
-  }));
+  const base = "https://eiknstone.com";
 
   return [
-    ...staticPages,
-    ...servicePages,
-    ...projectPages,
-  ].map((page) => ({
-    url: page.url,
-    lastModified: new Date(),
-    changeFrequency: page.changeFrequency,
-    priority: page.priority,
-  }));
+    {
+      url: base,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 1,
+    },
+    {
+      url: `${base}/about`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/services`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${base}/services/custom-homes`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/services/renovation-retrofit`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/services/commercial-fitout`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/services/foundation-structural`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/services/developer-partnerships`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/portfolio`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/process`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+    },
+    {
+      url: `${base}/contact`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.7,
+    },
+    {
+      url: `${base}/privacy`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
+      url: `${base}/terms`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
+      url: `${base}/accessibility`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+  ];
 }
