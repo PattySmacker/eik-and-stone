@@ -1,15 +1,19 @@
 import { Resend } from "resend";
 import { NextRequest, NextResponse } from "next/server";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(req: NextRequest) {
   try {
+    const apiKey = process.env.RESEND_API_KEY;
+    if (!apiKey) {
+      return NextResponse.json({ error: "Email service not configured" }, { status: 503 });
+    }
+
+    const resend = new Resend(apiKey);
     const body = await req.json();
     const { firstName, lastName, email, phone, projectType, description, budget } = body;
 
     await resend.emails.send({
-      from: "Eik and Stone <hello@andersbuild.com>",
+      from: "Eik and Stone <hello@eikandstone.com>",
       to: "info@eikandstone.com",
       replyTo: email,
       subject: `New Quote Request — ${projectType || "General Inquiry"}`,
@@ -52,7 +56,7 @@ export async function POST(req: NextRequest) {
 
           <div style="background: #0f1f3d; padding: 20px 32px;">
             <p style="color: rgba(255,255,255,0.4); font-size: 12px; margin: 0;">
-              Sent from andersbuild.com contact form
+              Sent from eikandstone.com contact form
             </p>
           </div>
         </div>
