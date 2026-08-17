@@ -162,7 +162,7 @@ export default async function ServiceDetailPage({
               padding: "16px 32px", borderRadius: "var(--radius-md)",
               textDecoration: "none",
             }}>
-              (343) 843-3307
+              (343) 655-5322
             </a>
 
             <div style={{

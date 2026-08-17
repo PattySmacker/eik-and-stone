@@ -113,12 +113,12 @@ export default function Footer() {
             }}>
               Contact
             </div>
-            <a href="tel:+13438433307" style={{
+            <a href="tel:+113436555322" style={{
               display: "block", fontFamily: "var(--font-family-body)",
               fontSize: 13, color: "rgba(255,255,255,0.5)",
               textDecoration: "none", marginBottom: 10,
             }}>
-              +1 (343) 843-3307
+              +1 (343) 655-5322
             </a>
             <a href="mailto:info@eikandstone.com" style={{
               display: "block", fontFamily: "var(--font-family-body)",

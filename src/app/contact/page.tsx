@@ -49,10 +49,10 @@ export default function ContactPage() {
       if (res.ok) {
         setSubmitted(true);
       } else {
-        alert("Something went wrong. Please call us directly at (343) 843-3307.");
+        alert("Something went wrong. Please call us directly at (343) 655-5322.");
       }
     } catch {
-      alert("Something went wrong. Please call us directly at (343) 843-3307.");
+      alert("Something went wrong. Please call us directly at (343) 655-5322.");
     } finally {
       setLoading(false);
     }
@@ -205,7 +205,7 @@ export default function ContactPage() {
                   }} className="form-row">
                     {[
                       { name: "email", label: "Email Address", placeholder: "you@example.com", type: "email" },
-                      { name: "phone", label: "Phone Number", placeholder: "(343) 843-3307", type: "tel" },
+                      { name: "phone", label: "Phone Number", placeholder: "(343) 655-5322", type: "tel" },
                     ].map((field) => (
                       <div key={field.name}>
                         <label style={{
@@ -413,8 +413,8 @@ export default function ContactPage() {
               {[
                 {
                   label: "Phone",
-                  value: "(343) 843-3307",
-                  href: "tel:113438433307",
+                  value: "(343) 655-5322",
+                  href: "tel:1113436555322",
                 },
                 {
                   label: "Email",

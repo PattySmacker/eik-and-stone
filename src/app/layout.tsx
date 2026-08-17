@@ -50,7 +50,7 @@ const jsonLd = {
   "name": "Eik and Stone",
   "description": "Building homes, businesses, and communities across Prince Edward Island. Licensed. Insured. Accountable.",
   "url": "https://eiknstone.com",
-  "telephone": "+13438433307",
+  "telephone": "+113436555322",
   "email": "info@eikandstone.com",
   "foundingDate": "2018",
   "founder": {

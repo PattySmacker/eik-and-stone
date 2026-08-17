@@ -69,7 +69,7 @@ export default function PrivacyPage() {
             },
             {
               title: "Contact Us",
-              body: "If you have any questions about this Privacy Policy, please contact us at info@eikandstone.com or call (343) 843-3307.",
+              body: "If you have any questions about this Privacy Policy, please contact us at info@eikandstone.com or call (343) 655-5322.",
             },
           ].map((section, i) => (
             <div key={i} style={{

@@ -61,7 +61,7 @@ export default function AccessibilityPage() {
             },
             {
               title: "Feedback & Contact",
-              body: "If you experience any accessibility barriers on our website or have suggestions for improvement, we want to hear from you. Please contact us at info@eikandstone.com or call (343) 843-3307. We aim to respond within 2 business days.",
+              body: "If you experience any accessibility barriers on our website or have suggestions for improvement, we want to hear from you. Please contact us at info@eikandstone.com or call (343) 655-5322. We aim to respond within 2 business days.",
             },
             {
               title: "Third-Party Content",

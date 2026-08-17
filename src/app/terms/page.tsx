@@ -73,7 +73,7 @@ export default function TermsPage() {
             },
             {
               title: "Contact",
-              body: "For questions about these Terms of Service, contact us at info@eikandstone.com or (343) 843-3307.",
+              body: "For questions about these Terms of Service, contact us at info@eikandstone.com or (343) 655-5322.",
             },
           ].map((section, i) => (
             <div key={i} style={{

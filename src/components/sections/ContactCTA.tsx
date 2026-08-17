@@ -66,7 +66,7 @@ export default function ContactCTA() {
           }}>
             Get a Free Quote →
           </Link>
-          <a href="tel:+13438433307" style={{
+          <a href="tel:+113436555322" style={{
             fontFamily: "var(--font-family-body)", fontSize: 14, fontWeight: 500,
             letterSpacing: "0.06em", textTransform: "uppercase",
             color: "rgba(255,255,255,0.6)",
