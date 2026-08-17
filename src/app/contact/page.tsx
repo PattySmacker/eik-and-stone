@@ -414,7 +414,7 @@ export default function ContactPage() {
                 {
                   label: "Phone",
                   value: "(343) 655-5322",
-                  href: "tel:1113436555322",
+                  href: "tel:(343) 655-5322",
                 },
                 {
                   label: "Email",

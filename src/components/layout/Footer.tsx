@@ -113,7 +113,7 @@ export default function Footer() {
             }}>
               Contact
             </div>
-            <a href="tel:+113436555322" style={{
+            <a href="tel:+13436555322" style={{
               display: "block", fontFamily: "var(--font-family-body)",
               fontSize: 13, color: "rgba(255,255,255,0.5)",
               textDecoration: "none", marginBottom: 10,
